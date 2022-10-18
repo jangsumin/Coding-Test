@@ -1,3 +1,4 @@
+// 합병 정렬 빈칸 채우기
 function mergeSort(arr){
     if (arr.length <= 1){
       return arr;
@@ -20,12 +21,12 @@ function mergeSort(arr){
         result.push(right.shift());
       }
     }
-    // while (left.length) {
-    //   /*빈칸을 채워주세요*/
-    // }
-    // while (right.length) {
-    //   /*빈칸을 채워주세요*/
-    // }
+    while (left.length) {
+      result.push(left.shift());
+    }
+    while (right.length) {
+      result.push(right.shift());
+    }
   
     return result;
   }
