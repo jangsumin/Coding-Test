@@ -13,3 +13,16 @@ function solution(n) {
     
     return array[n];
 }
+
+// 재귀함수을 사용한 문제 해결 - 통과할 수 없음.
+/*
+function solution(n) {
+    if (n === 0) {
+        return 0;
+    } else if (n === 1) {
+        return 1;
+    } else {
+        return (solution(n - 1) + solution(n - 2)) % 1234567;
+    }
+}
+*/
